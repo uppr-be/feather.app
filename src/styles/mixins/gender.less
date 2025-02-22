@@ -1,0 +1,25 @@
+@import "src/styles/vars.less";
+
+// mixin that take a variable name and set color and background-color
+.full-color(@color) {
+  color: darken(color("@{color}"), 30%);
+  background-color: ~"@{color}";
+}
+.bg-color-blur(@color) {
+  background-color: rgba(color("@{color}"), 0.5);
+}
+
+@colors: horror, fantastic, action, erotic;
+
+.loop-colors(@index) when (@index > 0) {
+  @color: extract(@colors, @index);
+  .full-color-@{color} {
+    .full-color(@@color);
+  }
+  .blur-color-@{color} {
+    .bg-color-blur(@@color);
+  }
+  .loop-colors(@index - 1);
+}
+
+.loop-colors(length(@colors));

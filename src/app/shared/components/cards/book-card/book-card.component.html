@@ -1,0 +1,24 @@
+<div
+  class="bookCard d-flex flex-column"
+  [ngStyle]="{
+    'background-image': 'url(' + book.cover + ')',
+    'background-repeat': 'no-repeat'
+  }"
+>
+  <div class="boocard__participation">
+    <icon name="heart" />
+    {{ book.nbParticipations }}
+  </div>
+  <div
+    class="bookCard__informations d-flex flex-justify-space-between flex-align-center blur-color-{{
+      book.gender
+    }}"
+  >
+    <div class="bookCard__gender">
+      <app-book-gender-tag [gender]="book.gender" />
+    </div>
+    <div class="bookCard__review">
+      <app-stars-review [review]="book.review" />
+    </div>
+  </div>
+</div>

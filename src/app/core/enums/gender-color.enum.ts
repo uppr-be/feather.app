@@ -1,0 +1,15 @@
+export enum GenderColor {
+  horror = '#222222',
+  fantastic = '#A060E5',
+  romance = '#F9C2BE',
+  scifi = '#202e5d',
+  action = '#00ffff',
+  thriller = '#30615E',
+  adventure = '#EEA014',
+  enigma = '#944929',
+  historical = '#595959',
+  erotic = '#D6793D',
+  poetry = '#C2C2A1',
+  comedy = '#00ff00',
+  abstract = '#35201C',
+}
