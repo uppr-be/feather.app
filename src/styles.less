@@ -1,7 +1,122 @@
 // only global non ngzorro style
-@import "/src/styles/vars.less";
+@import "src/styles/vars.less";
 
 * {
   font-family: "Poppins";
-  font-weight: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+.text-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.align-left {
+  text-align: left !important;
+}
+.align-right {
+  text-align: right !important;
+}
+.align-center {
+  text-align: center !important;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex !important;
+}
+.flex-column {
+  flex-direction: column;
+}
+.image-square {
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto @margin-bottom auto;
+  border-radius: @default-radius;
+}
+.justify-center {
+  justify-content: center;
+}
+strong {
+  font-weight: @weight-semiBold;
+}
+.w100 {
+  width: 100%;
+}
+.error {
+  color: @red;
+}
+.p {
+  &-0 {
+    padding: 0 !important;
+  }
+}
+.mb {
+  margin-bottom: @margin-bottom;
+  &-lg {
+    display: block;
+    margin-bottom: @margin-bottom-l;
+  }
+  &-sm {
+    display: block;
+    margin-bottom: @margin-bottom-s;
+  }
+  &-md {
+    display: block;
+    margin-bottom: @margin-bottom-m;
+  }
+}
+.mt {
+  margin-top: @margin-bottom;
+  &-lg {
+    display: block;
+    margin-top: @margin-bottom-l;
+  }
+  &-sm {
+    display: block;
+    margin-top: @margin-bottom-s;
+  }
+  &-md {
+    display: block;
+    margin-top: @margin-bottom-m;
+  }
+}
+.mr {
+  margin-right: @margin-bottom;
+  &-lg {
+    display: block;
+    margin-right: @margin-bottom-l;
+  }
+  &-sm {
+    display: block;
+    margin-right: @margin-bottom-s;
+  }
+  &-md {
+    display: block;
+    margin-right: @margin-bottom-m;
+  }
+}
+.ml {
+  margin-left: @margin-bottom;
+  &-lg {
+    display: block;
+    margin-left: @margin-bottom-l;
+  }
+  &-sm {
+    display: block;
+    margin-left: @margin-bottom-s;
+  }
+  &-md {
+    display: block;
+    margin-left: @margin-bottom-m;
+  }
 }

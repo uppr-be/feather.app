@@ -58,8 +58,8 @@
               }
             ],
             "styles": [
-              "src/assets/fonts/poppins/poppins.less",
-              "src/assets/fonts/icons/style.less",
+              "public/fonts/poppins/poppins.less",
+              "public/fonts/icons/style.less",
               "src/styles/app.less",
               "src/styles.less"
             ],
