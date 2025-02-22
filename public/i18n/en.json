@@ -1,0 +1,24 @@
+{
+  "COMMON": {
+    "MORE": "More"
+  },
+  "PAGES": {
+    "HOME": {
+      "TITLE": "Home",
+      "TITLES": {
+        "PARTICIPATE": "Which stories\nwill you participate today ?",
+        "STYLES": "What style\ndo you like the most ?",
+        "POPULARS": "Populars",
+        "RECENTS": "Recently published",
+        "FOLLOWED": "Followed authors",
+        "LAST_FOLLOWED_PUBLISH": "Last published of followed authors"
+      }
+    },
+    "ABOUT": {
+      "TITLE": "About"
+    },
+    "CONTACT": {
+      "TITLE": "Contact"
+    }
+  }
+}

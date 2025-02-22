@@ -1,0 +1,25 @@
+@import "src/styles/vars.less";
+
+.bubbleTitle {
+  background: @secondary-color;
+  padding: 25px;
+  position: relative;
+  border-radius: 50px 50px 50px 0;
+  margin-left: -25px;
+  margin-bottom: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: url("/images/triangle.svg") no-repeat;
+    width: 40px;
+    height: 40px;
+    bottom: -40px;
+  }
+  &__title {
+    color: @secondary-darker;
+    white-space: pre-line;
+    font-size: 1em;
+  }
+}
