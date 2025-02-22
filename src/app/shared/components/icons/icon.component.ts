@@ -10,6 +10,8 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 })
 export class IconComponent {
   @Input() name!: string;
-  @Input() circle?: boolean;
-  @Input() w?: number;
+  @Input() circle?: boolean = false;
+  @Input() w?: number = 10;
+  @Input() p?: number = 3;
+  @Input() color?: 'default' | 'white' = 'default';
 }

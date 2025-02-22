@@ -1,19 +1,23 @@
 <div class="userInformation d-flex">
-    <div class="userInformation__informations d-flex">
-        <div class="userInformation__informations__avatar">
-            <img src="/images/avatars/avatar.png" />
-        </div>
-        <ul class="userInformation__informations__text d-flex flex-column">
-            <li class="userInformation__informations__text__name">John Doe</li>
-            <li class="userInformation__informations__text__points"><icon name="crown" [w]="9" [circle]='true' /> <span>{{ points }}</span></li>
-        </ul>
+  <div class="userInformation__informations d-flex flex-align-center">
+    <div class="userInformation__informations__avatar">
+      <img src="/images/avatars/avatar.png" />
     </div>
-    <div class="userInformation__actions d-flex">
-        <div class="userInformation__actions__timer">
-            <app-timer></app-timer>
-        </div>
-        <div class="userInformation__actions__notification">
-            <app-notifications></app-notifications>
-        </div>
+    <ul class="userInformation__informations__text d-flex flex-column">
+      <li class="userInformation__informations__text__name">John Doe</li>
+      <li
+        class="userInformation__informations__text__points d-flex flex-align-center"
+      >
+        <icon name="crown" [w]="9" [circle]="true" /> <span>{{ points }}</span>
+      </li>
+    </ul>
+  </div>
+  <div class="userInformation__actions d-flex">
+    <div class="userInformation__actions__timer">
+      <app-timer></app-timer>
     </div>
+    <div class="userInformation__actions__notification">
+      <app-notifications></app-notifications>
+    </div>
+  </div>
 </div>

@@ -1,1 +1,7 @@
-<span [style.font-size.px]="w ?? 10" class="icon-{{name}}" [ngClass]="{'circle':  circle}"></span>
+<span
+  [style.font-size.px]="w"
+  [style.padding.px]="p"
+  [style.color.white]="color === 'white'"
+  class="icon-{{ name }}"
+  [ngClass]="{ circle: circle }"
+></span>

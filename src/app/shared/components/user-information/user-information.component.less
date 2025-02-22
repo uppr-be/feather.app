@@ -1,35 +1,39 @@
 @import "src/styles/vars.less";
 
 .userInformation {
-    color: @primary-darker;
+  color: @primary-darker;
+  justify-content: space-between;
 
-    &__informations {
-        align-items: center;
-        &__avatar {
-            img {
-                width: 40px;
-                border-radius: 50%;
-            }
-        }
-        &__text {
-            list-style: none;
-            margin: 0 0 0 5px;
-            text-align: left;
-            padding: 0;
-            align-items: flex-start;
-            line-height: 1rem;
-            &__name {
-                font-size: 0.8rem;
-            }
-            &__points span{
-                font-size: 0.6rem;
-                margin-left: 5px;
-            }
-        }
+  &__informations {
+    &__avatar {
+      img {
+        width: 40px;
+        border-radius: 50%;
+      }
     }
-    &__actions {
-        &__timer {
+    &__text {
+      list-style: none;
+      margin: 0 0 0 5px;
+      text-align: left;
+      padding: 0;
+      align-items: flex-start;
+      line-height: 1rem;
+      &__name {
+        font-size: 0.8rem;
+      }
+      &__points {
+        span {
+          font-size: 0.6rem;
+          margin-left: 5px;
         }
-        &__notification {}
+      }
     }
+  }
+  &__actions {
+    gap: 15px;
+    &__timer {
+    }
+    &__notification {
+    }
+  }
 }

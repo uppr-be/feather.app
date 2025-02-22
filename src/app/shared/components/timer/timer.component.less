@@ -1,0 +1,26 @@
+.timer {
+  padding: 4px;
+  border-radius: 10px;
+  background: rgba(#f3efdd, 0.35);
+  gap: 2px;
+  &__icon {
+    position: relative;
+    .progress {
+      top: -2px;
+      position: absolute;
+      width: 16px;
+    }
+    icon.disabled::after {
+      content: "";
+      position: absolute;
+      background: rgba(#232323, 0.35);
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.pie {
+  stroke: rgba(#232323, 0.35);
+}

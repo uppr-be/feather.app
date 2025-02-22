@@ -1,0 +1,26 @@
+<div class="timer d-flex">
+  @for (item of [1,2,3,4,5]; track $index) {
+  <div class="timer__icon">
+    @if (item === last) {
+    <svg class="progress" height="20" width="20" viewBox="0 0 20 20">
+      <circle
+        class="pie"
+        r="5"
+        cx="10"
+        cy="10"
+        fill="transparent"
+        stroke-width="10"
+        [attr.stroke-dasharray]="((100 - progress) * 31.4) / 100 + ' 31.4'"
+        transform="rotate(-90) translate(-20)"
+      />
+    </svg>
+    }
+    <icon
+      name="feather"
+      [color]="'white'"
+      [circle]="true"
+      [ngClass]="{ disabled: last < item }"
+    />
+  </div>
+  }
+</div>
