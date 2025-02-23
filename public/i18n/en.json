@@ -1,6 +1,21 @@
 {
   "COMMON": {
-    "MORE": "More"
+    "MORE": "More",
+    "BOOK_GENDER": {
+      "HORROR": "Horror",
+      "FANTASTIC": "Fantastic",
+      "ROMANCE": "Romance",
+      "SCIFI": "Scifi",
+      "ACTION": "Action",
+      "THRILLER": "Thriller",
+      "ADVENTURE": "Adventure",
+      "ENIGMA": "Enigma",
+      "HISTORICAL": "Historical",
+      "EROTIC": "Erotic",
+      "POETRY": "Poetry",
+      "COMEDY": "Comedy",
+      "ABSTRACT": "Abstract"
+    }
   },
   "PAGES": {
     "HOME": {

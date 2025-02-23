@@ -1,0 +1,8 @@
+<div
+  class="bookGenderCard"
+  [ngStyle]="{
+    'background-image': 'url(/images/genders/' + gender + '.jpg)'
+  }"
+>
+  {{ "COMMON.BOOK_GENDER." + (gender | uppercase) | translate }}
+</div>

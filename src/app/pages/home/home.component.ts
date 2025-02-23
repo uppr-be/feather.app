@@ -2,10 +2,10 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { BubbleTitleComponent } from '@shared/components/titles/bubble-title/bubble-title.component';
-import { RegularTitleComponent } from '@shared/components/titles/regular-title/regular-title.component';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { BookListComponent } from '../../shared/components/book-list/book-list.component';
 import { BookCard } from '../../shared/components/cards/book-card/book-card.component';
+import { BookGenderCardComponent } from '../../shared/components/cards/book-gender-card/book-gender-card.component';
 
 @Component({
   selector: 'app-home',
@@ -14,8 +14,8 @@ import { BookCard } from '../../shared/components/cards/book-card/book-card.comp
     NzGridModule,
     TranslateModule,
     BubbleTitleComponent,
-    RegularTitleComponent,
     BookListComponent,
+    BookGenderCardComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.less',
