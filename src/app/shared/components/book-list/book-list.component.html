@@ -1,0 +1,10 @@
+<div class="bookList">
+  <app-regular-title [title]="title" (onMoreClicked)="onMoreClicked.emit()" />
+  <div class="bookList__listOverflow d-flex">
+    <div class="bookList__listOverflow__list d-flex">
+      @for (book of books; track $index) {
+      <app-book-card [book]="book"></app-book-card>
+      }
+    </div>
+  </div>
+</div>

@@ -2,15 +2,22 @@
   >test</app-bubble-title
 >
 
-<app-regular-title [title]="'PAGES.HOME.TITLES.POPULARS' | translate" />
+<app-book-list
+  [books]="book"
+  [title]="'PAGES.HOME.TITLES.POPULARS' | translate"
+/>
 
 <app-bubble-title [title]="'PAGES.HOME.TITLES.STYLES' | translate" />
 
-<app-regular-title [title]="'PAGES.HOME.TITLES.POPULARS' | translate" />
-<app-regular-title [title]="'PAGES.HOME.TITLES.RECENTS' | translate" />
-<app-regular-title [title]="'PAGES.HOME.TITLES.FOLLOWED' | translate" />
-<app-regular-title
+<app-book-list
+  [books]="book"
+  [title]="'PAGES.HOME.TITLES.RECENTS' | translate"
+/>
+<app-book-list
+  [books]="book"
+  [title]="'PAGES.HOME.TITLES.FOLLOWED' | translate"
+/>
+<app-book-list
+  [books]="book"
   [title]="'PAGES.HOME.TITLES.LAST_FOLLOWED_PUBLISH' | translate"
 />
-
-<app-book-card [book]="book" />
