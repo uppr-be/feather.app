@@ -1,12 +1,11 @@
 <div
   class="bookCard d-flex flex-column"
   [ngStyle]="{
-    'background-image': 'url(' + book.cover + ')',
-    'background-repeat': 'no-repeat'
+    'background-image': 'url(' + book.cover + ')'
   }"
 >
-  <div class="boocard__participation">
-    <icon name="heart" />
+  <div class="bookCard__participation blur-color-{{ book.gender }}">
+    <icon name="person" />
     {{ book.nbParticipations }}
   </div>
   <div
@@ -15,7 +14,7 @@
     }}"
   >
     <div class="bookCard__gender">
-      <app-book-gender-tag [gender]="book.gender" />
+      <app-book-gender-tag class="d-flex" [gender]="book.gender" />
     </div>
     <div class="bookCard__review">
       <app-stars-review [review]="book.review" />

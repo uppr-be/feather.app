@@ -1,8 +1,13 @@
+@import "src/styles/vars.less";
+
 .starsReview {
   gap: 1px;
-  :host.starsReview__star {
-    span {
-      color: red !important;
-    }
+}
+:host ::ng-deep icon {
+  &.disabled span {
+    color: @primary-darker;
+  }
+  span {
+    color: @primary-color;
   }
 }
