@@ -4,5 +4,7 @@
     'background-image': 'url(/images/genders/' + gender + '.jpg)'
   }"
 >
-  {{ "COMMON.BOOK_GENDER." + (gender | uppercase) | translate }}
+  <div class="bookGenderCard__text">
+    {{ "COMMON.BOOK_GENDER." + (gender | uppercase) | translate }}
+  </div>
 </div>

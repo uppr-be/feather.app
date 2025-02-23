@@ -13,7 +13,7 @@ export type BookGender =
   | 'comedy'
   | 'abstract';
 
-export const bookGender = [
+export const bookGender: BookGender[] = [
   'horror',
   'fantastic',
   'romance',

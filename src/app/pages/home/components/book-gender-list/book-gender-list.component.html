@@ -1,1 +1,8 @@
-<p>book-gender-list works!</p>
+<div class="bookGenderList">
+  <app-bubble-title [title]="'PAGES.HOME.TITLES.STYLES' | translate" />
+  <div class="bookGenderList__container">
+    @for (gender of bookgender; track $index) {
+    <app-book-gender-card [gender]="gender"></app-book-gender-card>
+    }
+  </div>
+</div>

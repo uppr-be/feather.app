@@ -5,7 +5,7 @@ import { BubbleTitleComponent } from '@shared/components/titles/bubble-title/bub
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { BookListComponent } from '../../shared/components/book-list/book-list.component';
 import { BookCard } from '../../shared/components/cards/book-card/book-card.component';
-import { BookGenderCardComponent } from '../../shared/components/cards/book-gender-card/book-gender-card.component';
+import { BookGenderListComponent } from './components/book-gender-list/book-gender-list.component';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +15,7 @@ import { BookGenderCardComponent } from '../../shared/components/cards/book-gend
     TranslateModule,
     BubbleTitleComponent,
     BookListComponent,
-    BookGenderCardComponent,
+    BookGenderListComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.less',
