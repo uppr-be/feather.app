@@ -28,7 +28,8 @@ import { RegularTitleComponent } from '../titles/regular-title/regular-title.com
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BookListComponent {
-  @Input() title!: string;
+  @Input() title?: string;
+  @Input() noMargin = false;
   @Output() onMoreClicked = new EventEmitter<void>();
   @Input() books!: BookCard[];
 }

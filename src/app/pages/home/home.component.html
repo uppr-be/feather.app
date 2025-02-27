@@ -1,18 +1,18 @@
 <app-bubble-title [title]="'PAGES.HOME.TITLES.PARTICIPATE' | translate"
-  >test</app-bubble-title
->
+  ><app-book-list [books]="book" [noMargin]="true"
+/></app-bubble-title>
 
 <app-book-list
   [books]="book"
   [title]="'PAGES.HOME.TITLES.POPULARS' | translate"
 />
 
-<app-book-gender-list />
-
 <app-book-list
   [books]="book"
   [title]="'PAGES.HOME.TITLES.RECENTS' | translate"
 />
+<app-book-gender-list />
+
 <app-book-list
   [books]="book"
   [title]="'PAGES.HOME.TITLES.FOLLOWED' | translate"
