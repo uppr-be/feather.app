@@ -26,7 +26,8 @@ export class HomeComponent {
     {
       id: 1,
       title: 'The Hobbit',
-      review: 4,
+      rating: 4,
+      sequences: [],
       gender: 'fantastic',
       nbParticipations: 10,
       cover:
@@ -35,7 +36,8 @@ export class HomeComponent {
     {
       id: 1,
       title: 'The Hobbit',
-      review: 4,
+      rating: 4,
+      sequences: [],
       gender: 'fantastic',
       nbParticipations: 10,
       cover:
@@ -44,7 +46,8 @@ export class HomeComponent {
     {
       id: 1,
       title: 'The Hobbit',
-      review: 4,
+      rating: 4,
+      sequences: [],
       gender: 'fantastic',
       nbParticipations: 10,
       cover:
@@ -53,7 +56,8 @@ export class HomeComponent {
     {
       id: 1,
       title: 'The Hobbit',
-      review: 4,
+      rating: 4,
+      sequences: [],
       gender: 'fantastic',
       nbParticipations: 10,
       cover:
@@ -62,7 +66,8 @@ export class HomeComponent {
     {
       id: 1,
       title: 'The Hobbit',
-      review: 4,
+      rating: 4,
+      sequences: [],
       gender: 'fantastic',
       nbParticipations: 10,
       cover:

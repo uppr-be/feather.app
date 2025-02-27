@@ -1,0 +1,22 @@
+.@{btn-prefix-cls} {
+  border: none;
+  &-secondary {
+    color: @secondary-color;
+    & > * {
+      text-align: center;
+    }
+    &.active {
+      color: @white;
+      background-color: @secondary-color;
+    }
+  }
+  &-squared {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+  }
+}

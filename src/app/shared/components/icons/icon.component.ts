@@ -13,5 +13,5 @@ export class IconComponent {
   @Input() circle?: boolean = false;
   @Input() w?: number = 10;
   @Input() p?: number = 3;
-  @Input() color?: 'default' | 'white' = 'default';
+  @Input() color?: 'primary' | 'secondary' | 'white' = 'primary';
 }

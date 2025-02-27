@@ -3,12 +3,12 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { IconComponent } from '../icons/icon.component';
 
 @Component({
-  selector: 'app-stars-review',
+  selector: 'app-stars-rating',
   imports: [CommonModule, IconComponent],
-  templateUrl: './stars-review.component.html',
-  styleUrl: './stars-review.component.less',
+  templateUrl: './stars-rating.component.html',
+  styleUrl: './stars-rating.component.less',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class StarsReviewComponent {
-  @Input() review!: number;
+export class StarsRatingComponent {
+  @Input() rating!: number;
 }

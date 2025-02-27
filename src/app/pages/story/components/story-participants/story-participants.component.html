@@ -1,0 +1,12 @@
+<div class="participants">
+  @for (user of participants.last; track $index) {
+  <div
+    class="participants__avatar"
+    [ngStyle]="{
+            'background-image': 'url(' + user + ')',
+          }"
+  ></div>
+  }
+
+  <div class="participants__avatar">{{ participants.total }}</div>
+</div>

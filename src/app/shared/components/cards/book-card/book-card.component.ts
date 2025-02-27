@@ -10,15 +10,16 @@ import { BookGender } from '@core/types/book-gender.type';
 import { TranslateModule } from '@ngx-translate/core';
 import { BookGenderTagComponent } from '../../book-gender-tag/book-gender-tag.component';
 import { IconComponent } from '../../icons/icon.component';
-import { StarsReviewComponent } from '../../stars-review/stars-review.component';
+import { StarsRatingComponent } from '../../stars-rating/stars-rating.component';
 
 export type BookCard = {
   id: number;
   title: string;
-  review: number;
+  rating: number;
   nbParticipations: number;
   cover: string;
   gender: BookGender;
+  sequences: string[];
 };
 
 @Component({
@@ -28,7 +29,7 @@ export type BookCard = {
     TranslateModule,
     IconComponent,
     BookGenderTagComponent,
-    StarsReviewComponent,
+    StarsRatingComponent,
   ],
   templateUrl: './book-card.component.html',
   styleUrl: './book-card.component.less',
