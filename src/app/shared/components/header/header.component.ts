@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { UserInformationComponent } from '../user-information/user-information.component';
+import { UserInformationComponent } from '../user/user-information/user-information.component';
 
 @Component({
   selector: 'app-header',

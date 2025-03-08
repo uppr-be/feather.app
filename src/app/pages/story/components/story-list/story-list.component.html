@@ -1,5 +1,18 @@
-<div class="storyList d-flex">
-  @for(sequence of sequences; track $index) {
-  <app-story-sequence [sequence]="sequence" />
-  }
+<icon
+  name="timeline"
+  color="secondary"
+  class="timelilneIcon"
+  [w]="26"
+  (click)="toggleTimeline()"
+/>
+
+<div class="storyContainer d-flex" [ngClass]="{ timelineOpen: timelineOpend }">
+  <div class="storyTimeline">
+    <app-story-timeline />
+  </div>
+  <div class="storyList d-flex">
+    @for(sequence of sequences; track $index) {
+    <app-story-sequence [sequence]="sequence" />
+    }
+  </div>
 </div>

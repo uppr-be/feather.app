@@ -1,0 +1,23 @@
+<div class="storyTimelineUser">
+  <div class="storyTimelineUser__informations d-flex">
+    <div class="storyTimelineUser__informations__avatar">
+      <app-user-avatar [size]="55" [avatarUrl]="'/images/avatars/avatar.png'" />
+      <div class="storyTimelineUser__informations__avatar__bottomInfo">
+        <div
+          class="storyTimelineUser__informations__avatar__bottomInfo__country"
+        >
+          <app-country-flag [countryCode]="'be'" />
+        </div>
+        <div class="storyTimelineUser__informations__avatar__bottomInfo__date">
+          27/12/2024
+        </div>
+      </div>
+    </div>
+    <ul class="storyTimelineUser__informations__text d-flex flex-column">
+      <li class="storyTimelineUser__informations__text__name">John Doe</li>
+      <li class="d-flex flex-align-center flex-justify-space-between">
+        <app-user-points [points]="1000" />
+      </li>
+    </ul>
+  </div>
+</div>

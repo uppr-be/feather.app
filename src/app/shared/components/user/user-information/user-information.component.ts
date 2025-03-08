@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { IconComponent } from '../icons/icon.component';
-import { NotificationsComponent } from '../notifications/notifications.component';
-import { TimerComponent } from '../timer/timer.component';
+import { NotificationsComponent } from '../../notifications/notifications.component';
+import { TimerComponent } from '../../timer/timer.component';
+import { UserAvatarComponent } from '../user-avatar/user-avatar.component';
+import { UserPointsComponent } from '../user-points/user-points.component';
 
 @Component({
   selector: 'app-user-information',
@@ -10,7 +11,8 @@ import { TimerComponent } from '../timer/timer.component';
     CommonModule,
     TimerComponent,
     NotificationsComponent,
-    IconComponent,
+    UserAvatarComponent,
+    UserPointsComponent,
   ],
   templateUrl: './user-information.component.html',
   styleUrl: './user-information.component.less',

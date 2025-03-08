@@ -1,0 +1,39 @@
+@import "src/styles/vars.less";
+
+.storyTimelineUser {
+  justify-content: space-between;
+
+  &__informations {
+    &__avatar {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      align-items: center;
+      gap: 5px;
+
+      &__bottomInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        &__date {
+          font-size: 0.65em;
+          color: #6a6a6a;
+        }
+      }
+    }
+    &__text {
+      color: @secondary-color;
+      list-style: none;
+      margin: 15px 0 0 10px;
+      padding: 0;
+      align-items: flex-start;
+      line-height: 0.85em;
+      &__name {
+        font-size: 0.8em;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+    }
+  }
+}
