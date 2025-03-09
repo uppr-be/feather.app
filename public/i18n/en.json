@@ -1,6 +1,8 @@
 {
   "COMMON": {
     "MORE": "More",
+    "SUBSCRIBE": "Subscribe",
+    "UNSUBSCRIBE": "Unsubscribe",
     "BOOK_GENDER": {
       "HORROR": "Horror",
       "FANTASTIC": "Fantastic",

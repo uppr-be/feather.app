@@ -1,1 +1,8 @@
-<p>subscribe-button works!</p>
+<button nz-button class="ant-btn-secondary">
+  @if (subscribed) {
+  {{ "COMMON.UNSUBSCRIBE" | translate }}
+
+  } @else {
+  {{ "COMMON.SUBSCRIBE" | translate }}
+  }
+</button>
