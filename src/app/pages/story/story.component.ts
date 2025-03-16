@@ -1,10 +1,21 @@
+import { TemplatePortal } from '@angular/cdk/portal';
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {
+  AfterViewInit,
+  ChangeDetectionStrategy,
+  Component,
+  TemplateRef,
+  ViewChild,
+  ViewContainerRef,
+} from '@angular/core';
+import { SideMenuPortalService } from '@core/services/side-menu-portal.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { BookCard } from '@shared/components/cards/book-card/book-card.component';
 import { NzGridModule } from 'ng-zorro-antd/grid';
+import { IconComponent } from '../../shared/components/icons/icon.component';
 import { StoryInformationComponent } from './components/story-information/story-information.component';
 import { StoryListComponent } from './components/story-list/story-list.component';
+import { SuggestionContinueComponent } from './components/suggestion-continue/suggestion-continue.component';
 
 @Component({
   selector: 'app-story',
@@ -14,12 +25,14 @@ import { StoryListComponent } from './components/story-list/story-list.component
     TranslateModule,
     StoryInformationComponent,
     StoryListComponent,
+    IconComponent,
+    SuggestionContinueComponent,
   ],
   templateUrl: './story.component.html',
   styleUrl: './story.component.less',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class StoryComponent {
+export class StoryComponent implements AfterViewInit {
   public story: BookCard = {
     id: 1,
     title: 'The Hobbit',
@@ -33,4 +46,18 @@ export class StoryComponent {
       "On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. \nDu texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction.",
     ],
   };
+
+  @ViewChild('suggestionButtons') suggestionButtons!: TemplateRef<any>;
+
+  constructor(
+    private portalService: SideMenuPortalService,
+    private viewContainerRef: ViewContainerRef
+  ) {}
+
+  public ngAfterViewInit(): void {
+    this.portalService.setPortal(
+      new TemplatePortal(this.suggestionButtons, this.viewContainerRef)
+    );
+    this.portalService.disableDefaultButton(['story']);
+  }
 }

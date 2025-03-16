@@ -31,6 +31,22 @@
         "LAST_FOLLOWED_PUBLISH": "Last published of followed authors"
       }
     },
+    "STORY": {
+      "SUGGEST_CONTINUE": {
+        "ACCEPT": {
+          "SUGGEST_1": "I continue this story",
+          "SUGGEST_2": "I accept this story",
+          "SUGGEST_3": "I am inspired",
+          "SUGGEST_4": "Let's go"
+        },
+        "DECLINE": {
+          "DECLINE_1": "I am not inspired",
+          "DECLINE_2": "Sorry, not interested",
+          "DECLINE_3": "Not this time",
+          "DECLINE_4": "I pass my turn"
+        }
+      }
+    },
     "ABOUT": {
       "TITLE": "About"
     },

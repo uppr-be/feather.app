@@ -1,0 +1,26 @@
+@import "src/styles/vars.less";
+.suggestionContinue {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.accept {
+  .sideMenu__cta {
+    &__icon {
+      background: @secondary-darker;
+    }
+    &__text {
+      color: @secondary-darker;
+    }
+  }
+}
+.decline {
+  .sideMenu__cta {
+    &__icon {
+      background: @red;
+    }
+    &__text {
+      color: @red;
+    }
+  }
+}

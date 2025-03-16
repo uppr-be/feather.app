@@ -1,11 +1,22 @@
 <div class="sideMenu" [ngClass]="{ leftSide: leftSide }">
-  <div class="sideMenu__icon" [routerLink]="['/story']">
-    <icon name="feather" color="white" class="menuIcon"></icon>
+  <ng-template [cdkPortalOutlet]="activePortal | async" />
+  @if (!(disabledButton|async)?.includes('story')) {
+  <div class="sideMenu__cta" [routerLink]="['/story']">
+    <div class="sideMenu__cta__icon">
+      <icon name="feather" color="white" class="menuIcon" />
+    </div>
   </div>
-  <div class="sideMenu__icon" [routerLink]="['/profile']">
-    <icon name="person-stroke" color="white" class="menuIcon"></icon>
+  } @if (!(disabledButton|async)?.includes('profil')) {
+  <div class="sideMenu__cta" [routerLink]="['/profile']">
+    <div class="sideMenu__cta__icon">
+      <icon name="person-stroke" color="white" class="menuIcon" />
+    </div>
   </div>
-  <div class="sideMenu__icon" [routerLink]="['/settings']">
-    <icon name="gear" color="white" class="menuIcon"></icon>
+  } @if (!(disabledButton|async)?.includes('setting')) {
+  <div class="sideMenu__cta" [routerLink]="['/settings']">
+    <div class="sideMenu__cta__icon">
+      <icon name="gear" color="white" class="menuIcon" />
+    </div>
   </div>
+  }
 </div>
