@@ -1,0 +1,24 @@
+.user {
+  margin-top: 120px;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+:host ::ng-deep .storyTimelineUser {
+  width: 100% !important;
+  .userAvatar img {
+    width: 90px;
+  }
+  &__informations {
+    &__text {
+      gap: 10px;
+      line-height: none;
+      &__name {
+        font-size: 1em;
+      }
+    }
+  }
+  button {
+    width: 100%;
+  }
+}

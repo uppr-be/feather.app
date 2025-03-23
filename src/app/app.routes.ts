@@ -19,7 +19,7 @@ export const routes: Routes = [
   },
   {
     path: 'profile',
-    data: {},
+    data: { smallHeader: true },
     loadComponent: () =>
       import('@pages/profile/profile.component').then(
         (mod) => mod.ProfileComponent
@@ -27,7 +27,7 @@ export const routes: Routes = [
   },
   {
     path: 'settings',
-    data: {},
+    data: { smallHeader: true },
     loadComponent: () =>
       import('@pages/settings/settings.component').then(
         (mod) => mod.SettingsComponent
@@ -40,8 +40,8 @@ export const routes: Routes = [
       import('@pages/story/story.component').then((mod) => mod.StoryComponent),
   },
   {
-    path: 'user',
-    data: {},
+    path: 'user/:name',
+    data: { smallHeader: true },
     loadComponent: () =>
       import('@pages/user/user.component').then((mod) => mod.UserComponent),
   },

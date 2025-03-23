@@ -1,5 +1,5 @@
-<header class="header">
-    <div class="header__userInformation">
-        <app-user-information></app-user-information>
-    </div>
+<header class="header" [ngClass]="{ small: smallHeader() }">
+  <div class="header__userInformation">
+    <app-user-information></app-user-information>
+  </div>
 </header>

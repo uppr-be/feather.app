@@ -52,6 +52,13 @@
     },
     "CONTACT": {
       "TITLE": "Contact"
+    },
+    "USER": {
+      "LISTS": {
+        "CREATED": "Created stories",
+        "PARTICIPATED": "Participated stories",
+        "FAVORITES": "Favorite stories"
+      }
     }
   }
 }

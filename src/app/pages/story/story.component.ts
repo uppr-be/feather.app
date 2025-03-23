@@ -12,7 +12,6 @@ import { SideMenuPortalService } from '@core/services/side-menu-portal.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { BookCard } from '@shared/components/cards/book-card/book-card.component';
 import { NzGridModule } from 'ng-zorro-antd/grid';
-import { IconComponent } from '../../shared/components/icons/icon.component';
 import { StoryInformationComponent } from './components/story-information/story-information.component';
 import { StoryListComponent } from './components/story-list/story-list.component';
 import { SuggestionContinueComponent } from './components/suggestion-continue/suggestion-continue.component';
@@ -25,7 +24,6 @@ import { SuggestionContinueComponent } from './components/suggestion-continue/su
     TranslateModule,
     StoryInformationComponent,
     StoryListComponent,
-    IconComponent,
     SuggestionContinueComponent,
   ],
   templateUrl: './story.component.html',

@@ -1,1 +1,21 @@
-<p>user works!</p>
+<div class="user">
+  <div class="user__header">
+    <app-story-timeline-user />
+  </div>
+  <div class="user__content">
+    <app-book-list
+      [books]="book"
+      [title]="'PAGES.USER.LISTS.CREATED' | translate"
+    />
+
+    <app-book-list
+      [books]="book"
+      [title]="'PAGES.USER.LISTS.PARTICIPATED' | translate"
+    />
+
+    <app-book-list
+      [books]="book"
+      [title]="'PAGES.USER.LISTS.FAVORITES' | translate"
+    />
+  </div>
+</div>
